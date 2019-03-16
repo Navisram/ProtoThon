@@ -40,3 +40,18 @@ for i in range(0,len(y)):
 mean=s/len(y)
 val=math.sqrt(mean)
 print(val)
+
+
+
+Question3
+
+condition: user should give value <=5
+x=5
+r='0'
+s=0
+for i in range(0,x):
+    n=(11)**i
+    n=str(n)
+    joined_string=" ".join(str(i)for i in n)
+
+    print(joined_string)
