@@ -1,0 +1,42 @@
+Question_1
+
+
+
+import operator 
+operator_dict ={
+    '+':operator.add,
+    '-':operator.sub,
+    '*':operator.mul,
+
+}
+opr=input("enter")
+
+thisdict={
+    "first":2,
+    "second":3
+}
+x=thisdict["first"]
+y=thisdict["second"]
+print(operator_dict[opr](x,y))
+
+
+
+Question_2
+ 
+ 
+ 
+ import math
+y=[]
+s=0
+x=input("enter")
+for i in x:
+    if(i==','):
+        continue
+    y.append(i)
+    y=list(map(int, y))
+print(y)
+for i in range(0,len(y)):
+    s+=(y[i]**2)
+mean=s/len(y)
+val=math.sqrt(mean)
+print(val)
