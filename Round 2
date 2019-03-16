@@ -1,0 +1,17 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import skimage.io as io
+from copy import deepcopy
+cat= io.imread("catty.jpg")
+
+green_channel = deepcopy(cat)
+
+green_channel[:,:,0]=0
+green_channel[:,:,2]=0
+
+fig, ax = plt.subplots(ncols=2,nrows=2)
+ax[0,0].imshow(cat)
+ax[0,0].set_title('original')
+ax[0,1].imshow(green_channel)
+ax[0,1].set_title('green_channel')
+plt.show()
